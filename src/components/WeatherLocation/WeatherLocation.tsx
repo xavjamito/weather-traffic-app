@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 
 import LocationList from "../LocationList/LocationList";
 import { DATE_FORMAT, TIME_FORMAT } from "../../constants";
-import WeatherDisplay from "./WeatherDisplay";
 import WeatherAPI from "../../api/WeatherAPI";
 
 function makeCompact(locationData) {
@@ -30,14 +29,11 @@ const WeatherLocation = ({ date, time, location, dispatch }) => {
   useEffect(() => {
     if (!date || !time) return;
 
-    console.log("date and time!", date, time);
-
     currDate.current = date.format(DATE_FORMAT);
     currTime.current = time.format(TIME_FORMAT);
     const getWeatherForecast = async () => {
       await WeatherAPI.getWeatherData()
         .then((res) => {
-          console.log("res!!", res);
           allLocations.current = makeCompact(res);
         })
         .catch((err) => console.error(err));
