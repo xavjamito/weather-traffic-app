@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+## Weather Forecast and Traffic Cam Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation and Setup Instructions
 
-## Available Scripts
+#### Example:  
 
-In the project directory, you can run:
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
-### `npm start`
+Installation:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`npm install`  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To Run Test Suite:  
 
-### `npm test`
+`npm test`  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To Start Server:
 
-### `npm run build`
+`npm start`  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To Visit App:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`localhost:3000/`  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Reflection
 
-### `npm run eject`
+For this project, I wanted to showcase my technical proficiency in React. The tasks are relatively simple, but I was not able to achieve my goals due to the project time constraints as I was busy with other engagements. Since an API was already provided, I did not make use of any backend services and frameworks such as NestJS
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+For state management, I opted to use the built-in `useReducer` library from React since using an external state management library such as Redux would be overkill considering the application's goals.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The technologies implemented in this project are React, Ant Design, and a significant amount of VanillaJS, JSX, and CSS. I chose to use the `create-react-app` boilerplate to minimize initial setup. In the next iteration, I would plan to improve the overall UX of the app, particularly the following:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Improving the User Interface to show more details
+* Improving the Weather Forecast Card to show more than just textual information
+* Adding a loader
+* Loading the initial forecast and traffic image for the current date, time, and nearest location
+* Build a backend service to handle heavy application logic.
